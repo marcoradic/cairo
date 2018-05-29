@@ -8,11 +8,11 @@ Efficient operations are achieved using numpy arrays along with numba JIT optimi
 
 As an example, consider the following image, taken by Pietro De Grandi of the Pragser Wildsee in Italy:
 
-![Pragser Wildsee](resources/pietro.JPG)
+![Pragser Wildsee](resources/pietro.JPEG)
 
 After taking away 400 pixels of width using Cairo, the image looks like this:
 
-![Retargeted Wildsee](resources/out.JPG)
+![Retargeted Wildsee](resources/out.JPEG)
 
 Import details are preserved, because these regions have high energy/gradient values.
 
