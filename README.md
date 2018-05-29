@@ -6,6 +6,16 @@ Instead of naive linear scaling, an energy map of the image is generated to dete
 Currently, only shrinking of images is implemented (Scaling <= 1.0).
 Efficient operations are achieved using numpy arrays along with numba JIT optimizations.
 
+As an example, consider the following image, taken by Pietro De Grandi of the Pragser Wildsee in Italy:
+
+![Pragser Wildsee](resources/pietro.JPG)
+
+After taking away 400 pixels of width using Cairo, the image looks like this:
+
+![Retargeted Wildsee](resources/out.JPG)
+
+Import details are preserved, because these regions have high energy/gradient values.
+
 ## Installation
 
 Using Python 3
@@ -25,4 +35,3 @@ Example:
 ```
 python cairo.py -v 600 700 input.jpg output.jpg
 ```
-
