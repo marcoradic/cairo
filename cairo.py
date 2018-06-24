@@ -12,7 +12,6 @@ def vprint(*args, **kwargs):
     """
     Verbose print
     """
-
     if verbose:
         print(*args, **kwargs)
 
@@ -160,7 +159,7 @@ def main():
     width, height = im.size
     desired_width, desired_height = width, height
     if len(args.size) == 2:
-        if args.size[0] >= width or args.size[0] < 1 or args.size[1] >= height or args.size[1] < 1:
+        if args.size[0] > width or args.size[0] < 1 or args.size[1] > height or args.size[1] < 1:
             raise argparse.ArgumentTypeError('Scaling values must be between 1 and original values')
         desired_width, desired_height = list(map(int, args.size))
     else:
