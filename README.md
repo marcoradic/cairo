@@ -10,7 +10,7 @@ As an example, consider the following image, taken by Pietro De Grandi of the Pr
 
 ![Pragser Wildsee](resources/pietro.JPEG)
 
-After taking away 400 pixels of width using Cairo, the image looks like this:
+After taking away 400 pixels of width using Cairo, the image looks as follows:
 
 ![Retargeted Wildsee](resources/out.JPEG)
 
