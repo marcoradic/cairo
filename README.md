@@ -14,7 +14,7 @@ After taking away 400 pixels of width using Cairo, the image looks as follows:
 
 ![Retargeted Wildsee](resources/out.JPEG)
 
-Import details are preserved, because these regions have high energy/gradient values.
+Important details are preserved, because these regions have high energy/gradient values.
 
 ## Installation
 
